@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: black;
+        }
+        .main{
+            position: relative;
+            height: 100vh;
+            width: 100%;
+        }
+        .main img{
+            height: 100vh;
+            width: 100%;
+        }
+        .m1{
+            position: absolute;
+            top: 80px;
+            margin-left: 20%;
+            height: 500px;
+            width: 60%;
+            background-color: antiquewhite;
+            display: flex;
+            border-radius: 20px;
+        }
+        .m1 h2{
+            margin: 0px;
+            padding-top: 10px;
+            margin-left: 300px;
+            font-size: x-large;
+        }
+        .m1 table{
+            padding-top: 20px;
+            margin-left: 250px;
+            font-size: large;
+        }
+        table td{
+            padding-bottom: 30px;
+        }
+        table button{
+            background-color: orange;
+            border-radius: 20px;
+            color: whitesmoke;
+            justify-content: center;
+            align-items: center;
+            margin-left: 100%;
+            height: 40px;
+            width: 100%;
+        }
+        .m2{
+            position: absolute;
+            top: 50px;
+            right: 30px;
+            width: 100px;
+        }
+        .m2 button{
+            background-color: orange;
+            border-radius: 20px;
+            height: 50px;
+            width: 100%;
+        }
+        .m2 button a{
+            text-decoration: none;
+            color: whitesmoke;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img src="images/IMG-20240914-WA0007.jpg" alt="" style="filter: brightness(40%);">
+        <div class="m1">
+            <form action="">
+                <table>
+                    <h2>Admission Form</h2>
+                    <br>
+                    <tr>
+                        <td><label for="Name"><b>Name :</b></label></td>
+                        <td><input type="text" id="Name" placeholder="Enter Your Name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Number"><b>Number :</b></label></td>
+                        <td><input type="Number" id="Number" placeholder="Enter Your Number" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Mail"><b>E-mail :</b></label></td>
+                        <td><input type="email" placeholder="Enter Your E-mail" required id="Mail"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Gender"><b>Gender :</b></label></td>
+                        <td>  Male
+                            <input type="radio" name="a" id="male">
+                            Female
+                            <input type="radio" name="a" id="Female">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="Course"><b>Course :</b></label></td>
+                        <td><select name="" id="Course">
+                            <option value="o"></option>
+                            <option value="1">Web Development</option>
+                            <option value="2">Java</option>
+                            <option value="3">Python</option>
+                            <option value="4">Basic Fundaments of Computer</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="School/College"><b>School/College:&nbsp;&nbsp;</b></label></td>
+                        <td><input type="text" id="School/College" placeholder="Enter Your Qualification" style="padding-left: 5px;"></td>
+                    </tr>
+                    <tr>
+                        <td><button>Submit</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div class="m2">
+            <button type="back"><a href="index.html" target="_blank"><b>Return &#8592;</b></a></button>
+        </div>
+    </div>
+</body>
+</html>
